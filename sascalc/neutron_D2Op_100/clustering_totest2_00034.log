@@ -1,0 +1,18 @@
+#Structural Information:
+1. PDB input file = /share/apps/genapp/sassie2/results/users/castellanosm/Aug16_NISTmAb/2ns_struct1.pdb
+2. Number of atoms = 20667; Mw = 150692.17
+3. Dimensions = x: -66.88, 22.48, y: -71.51, 53.26, z: -45.10, 85.37
+4. Maximum radial dimension Dmax = 201.43 A (contrast-independent)
+5. Molecular center of mass = x: -17.42, y: -0.31, z: 5.95 (contrast-independent)
+6. Molecular Rg = 49.546744 A (contrast-independent)
+#Scattering Intensity:
+7. Source = neutron
+8. D2O % = 100.000
+9. Non-exchangeable H deuteration file = clustering_totest2/sascalc/neutron_D2Op_100/HDexchange_Info_D2Op_100.txt
+10. Exchangeable H deuteration file = clustering_totest2/sascalc/neutron_D2Op_100/Deuteration_Info_D2Op_100.txt
+11. PDB output file with explicit D atoms = clustering_totest2/sascalc/neutron_D2Op_100/D2Op_100.pdb
+12. I(q) .vs. q file = clustering_totest2/sascalc/neutron_D2Op_100/clustering_totest2_00034.iq
+13. Number of golden vectors used = 61
+14. Io =      0.119
+15. Center of Mass = -17.28, y: -0.25, z: 5.59 (contrast-dependent)
+16. Rg = 49.141028 A (contrast-dependent)

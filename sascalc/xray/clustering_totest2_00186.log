@@ -1,0 +1,14 @@
+#Structural Information:
+1. PDB input file = /share/apps/genapp/sassie2/results/users/castellanosm/Aug16_NISTmAb/2ns_struct1.pdb
+2. Number of atoms = 20667; Mw = 150692.17
+3. Dimensions = x: -66.88, 76.06, y: -70.10, 53.26, z: -45.10, 49.58
+4. Maximum radial dimension Dmax = 211.21 A (contrast-independent)
+5. Molecular center of mass = x: -3.87, y: -2.16, z: -1.83 (contrast-independent)
+6. Molecular Rg = 50.088444 A (contrast-independent)
+#Scattering Intensity:
+7. Source = x-ray
+8. I(q) .vs. q file = clustering_totest2/sascalc/xray/clustering_totest2_00186.iq
+9. Number of golden vectors used = 61
+10. Io =      0.119
+11. Center of Mass = x: -3.88, y: -2.11, z: -1.82 (contrast-dependent)
+12. Rg = 50.163357 (contrast-dependent)

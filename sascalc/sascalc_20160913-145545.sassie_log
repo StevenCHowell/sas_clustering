@@ -1,0 +1,244 @@
+Date		Time		File		Method		Line	Level	Message
+2016-09-13 14:55:45,873 - module_utilities.py - setup_logging - 133 - DEBUG - in setup_logging
+2016-09-13 14:55:45,874 - module_utilities.py - setup_logging - 134 - INFO - Program started
+2016-09-13 14:55:45,874 - module_utilities.py - preamble - 95 - DEBUG - in preamble
+2016-09-13 14:55:45,874 - module_utilities.py - preamble - 98 - INFO - module_application : sascalc
+2016-09-13 14:55:45,874 - module_utilities.py - preamble - 99 - INFO - executed by user : jobrunner on Tue Sep 13 14:55:45 2016
+2016-09-13 14:55:45,874 - module_utilities.py - preamble - 100 - INFO - current directory : /share/apps/genapp/sassie2/results/users/castellanosm/test1
+2016-09-13 14:55:45,883 - module_utilities.py - preamble - 101 - INFO - hostname : compute-0-0.local
+2016-09-13 14:55:45,883 - sascalc.py - main - 63 - DEBUG - in main
+2016-09-13 14:55:45,883 - sascalc.py - unpack_variables - 83 - DEBUG - in unpack_variables
+2016-09-13 14:55:45,884 - sascalc.py - unpack_variables - 120 - DEBUG - {'dcdfile': u'/share/apps/genapp/sassie2/results/users/castellanosm/test1/to_test2.dcd', 'deuterated_basis_string_array': [''], 'app': 'sascalc', 'number_exH_regions': 1, 'xray_number_contrast_points': 1, 'solvent_volume': 20.0, 'number_r_values': 51, 'xray_I0_array': [0.119], 'xray_D2O_percentage_array': [0.119], 'number_q_values': 41, 'VDW_scaling_factor': 0.77, 'exH_basis_string_array': ['moltype protein'], 'xon': 'neutron_and_xray', 'fraction_deuterated_array': [0.0], 'complex_amplitudes': False, 'I0_array': [0.119], 'number_contrast_points': 1, 'q_max': 0.4, 'number_deuteration_regions': 0, 'fraction_exH_array': [0.95], 'number_golden_vectors': 61, 'golden_vector_method_option': 'fixed', 'pdbfile': u'/share/apps/genapp/sassie2/results/users/castellanosm/Aug16_NISTmAb/2ns_struct1.pdb', 'runname': u'clustering_totest2', 'D2O_percentage_array': [100.0]}
+2016-09-13 14:55:45,884 - module_utilities.py - general_setup - 58 - DEBUG - in general_setup
+2016-09-13 14:55:45,884 - module_utilities.py - write_json_file - 22 - DEBUG - in write_json_file
+2016-09-13 14:55:45,884 - module_utilities.py - write_json_file - 24 - INFO - writing json files with input variables
+2016-09-13 14:55:45,885 - module_utilities.py - write_json_file - 28 - INFO - writing parameters to sascalc_20160913-145545.sassie_json
+2016-09-13 14:55:45,894 - module_utilities.py - write_json_file - 32 - INFO - backing up existing .last_sas.json file to .last_sas.json_backup
+2016-09-13 14:55:45,903 - module_utilities.py - write_json_file - 36 - INFO - backing up existing .last_sas_sascalc.json file to .last_sas_sascalc.json_backup
+2016-09-13 14:55:45,905 - module_utilities.py - write_json_file - 40 - INFO - writing parameters to .last_sas.json file
+2016-09-13 14:55:45,906 - module_utilities.py - write_json_file - 44 - INFO - writing parameters to .last_sas_sascalc.json file
+2016-09-13 14:55:45,906 - module_utilities.py - write_json_file - 46 - INFO - input variables: [{"dcdfile": "/share/apps/genapp/sassie2/results/users/castellanosm/test1/to_test2.dcd", "deuterated_basis_string_array": [""], "app": "sascalc", "number_exH_regions": 1, "xray_number_contrast_points": 1, "solvent_volume": 20.0, "number_r_values": 51, "xray_I0_array": [0.119], "xray_D2O_percentage_array": [0.119], "number_q_values": 41, "VDW_scaling_factor": 0.77, "exH_basis_string_array": ["moltype protein"], "xon": "neutron_and_xray", "fraction_deuterated_array": [0.0], "complex_amplitudes": false, "I0_array": [0.119], "number_contrast_points": 1, "q_max": 0.4, "number_deuteration_regions": 0, "fraction_exH_array": [0.95], "number_golden_vectors": 61, "golden_vector_method_option": "fixed", "pdbfile": "/share/apps/genapp/sassie2/results/users/castellanosm/Aug16_NISTmAb/2ns_struct1.pdb", "runname": "clustering_totest2", "D2O_percentage_array": [100.0]}]
+2016-09-13 14:55:45,906 - module_utilities.py - general_setup - 75 - INFO - setting runpath directory to : clustering_totest2/sascalc
+2016-09-13 14:55:45,909 - module_utilities.py - general_setup - 82 - INFO - creating directory : clustering_totest2/sascalc
+2016-09-13 14:55:45,909 - sascalc.py - initialization - 130 - DEBUG - in initialization
+2016-09-13 15:00:20,935 - sascalc.py - run - 221 - DEBUG - in SasCalc
+2016-09-13 15:00:20,936 - module_utilities.py - print_gui - 148 - INFO - 
+============================================================ 
+
+2016-09-13 15:00:20,937 - module_utilities.py - print_gui - 148 - INFO - DATA FROM RUN: Tue Sep 13 19:00:20 2016 
+
+
+2016-09-13 15:00:28,667 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.005
+2016-09-13 15:00:29,987 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.01
+2016-09-13 15:00:31,332 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.015
+2016-09-13 15:00:32,672 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.02
+2016-09-13 15:00:34,017 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.025
+2016-09-13 15:00:35,362 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.03
+2016-09-13 15:00:36,704 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.035
+2016-09-13 15:00:38,041 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.04
+2016-09-13 15:00:39,358 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.045
+2016-09-13 15:00:40,698 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.05
+2016-09-13 15:00:42,041 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.055
+2016-09-13 15:00:43,373 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.06
+2016-09-13 15:00:44,738 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.065
+2016-09-13 15:00:46,071 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.07
+2016-09-13 15:00:47,249 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.075
+2016-09-13 15:00:48,428 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.08
+2016-09-13 15:00:49,761 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.085
+2016-09-13 15:00:51,116 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.09
+2016-09-13 15:00:52,443 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.095
+2016-09-13 15:00:53,783 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.1
+2016-09-13 15:00:55,103 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.105
+2016-09-13 15:00:56,451 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.11
+2016-09-13 15:00:57,797 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.115
+2016-09-13 15:00:59,138 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.12
+2016-09-13 15:01:00,306 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.125
+2016-09-13 15:01:01,536 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.13
+2016-09-13 15:01:02,705 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.135
+2016-09-13 15:01:03,890 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.14
+2016-09-13 15:01:05,068 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.145
+2016-09-13 15:01:06,229 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.15
+2016-09-13 15:01:07,398 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.155
+2016-09-13 15:01:08,564 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.16
+2016-09-13 15:01:09,735 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.165
+2016-09-13 15:01:10,896 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.17
+2016-09-13 15:01:12,068 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.175
+2016-09-13 15:01:13,299 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.18
+2016-09-13 15:01:14,478 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.185
+2016-09-13 15:01:15,642 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.19
+2016-09-13 15:01:16,802 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.195
+2016-09-13 15:01:17,967 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.2
+2016-09-13 15:01:19,129 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.205
+2016-09-13 15:01:20,297 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.21
+2016-09-13 15:01:21,466 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.215
+2016-09-13 15:01:22,626 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.22
+2016-09-13 15:01:23,794 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.225
+2016-09-13 15:01:24,954 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.23
+2016-09-13 15:01:26,123 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.235
+2016-09-13 15:01:27,296 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.24
+2016-09-13 15:01:28,460 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.245
+2016-09-13 15:01:29,626 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.25
+2016-09-13 15:01:30,788 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.255
+2016-09-13 15:01:31,952 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.26
+2016-09-13 15:01:33,114 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.265
+2016-09-13 15:01:34,280 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.27
+2016-09-13 15:01:35,443 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.275
+2016-09-13 15:01:36,604 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.28
+2016-09-13 15:01:37,768 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.285
+2016-09-13 15:01:38,953 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.29
+2016-09-13 15:01:40,116 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.295
+2016-09-13 15:01:41,287 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.3
+2016-09-13 15:01:42,617 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.305
+2016-09-13 15:01:43,775 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.31
+2016-09-13 15:01:44,993 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.315
+2016-09-13 15:01:46,164 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.32
+2016-09-13 15:01:47,352 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.325
+2016-09-13 15:01:48,520 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.33
+2016-09-13 15:01:49,694 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.335
+2016-09-13 15:01:50,861 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.34
+2016-09-13 15:01:52,019 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.345
+2016-09-13 15:01:53,186 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.35
+2016-09-13 15:01:54,353 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.355
+2016-09-13 15:01:55,511 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.36
+2016-09-13 15:01:56,721 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.365
+2016-09-13 15:01:57,893 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.37
+2016-09-13 15:01:59,060 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.375
+2016-09-13 15:02:00,224 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.38
+2016-09-13 15:02:01,382 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.385
+2016-09-13 15:02:02,552 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.39
+2016-09-13 15:02:03,717 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.395
+2016-09-13 15:02:05,012 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.4
+2016-09-13 15:02:06,287 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.405
+2016-09-13 15:02:07,586 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.41
+2016-09-13 15:02:08,924 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.415
+2016-09-13 15:02:10,281 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.42
+2016-09-13 15:02:11,610 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.425
+2016-09-13 15:02:12,778 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.43
+2016-09-13 15:02:14,051 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.435
+2016-09-13 15:02:15,229 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.44
+2016-09-13 15:02:16,546 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.445
+2016-09-13 15:02:17,729 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.45
+2016-09-13 15:02:18,894 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.455
+2016-09-13 15:02:20,062 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.46
+2016-09-13 15:02:21,225 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.465
+2016-09-13 15:02:22,396 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.47
+2016-09-13 15:02:23,553 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.475
+2016-09-13 15:02:24,726 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.48
+2016-09-13 15:02:25,886 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.485
+2016-09-13 15:02:27,200 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.49
+2016-09-13 15:02:28,395 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.495
+2016-09-13 15:02:29,565 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.5
+2016-09-13 15:02:30,876 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.505
+2016-09-13 15:02:32,047 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.51
+2016-09-13 15:02:33,221 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.515
+2016-09-13 15:02:34,392 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.52
+2016-09-13 15:02:35,569 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.525
+2016-09-13 15:02:36,744 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.53
+2016-09-13 15:02:38,060 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.535
+2016-09-13 15:02:39,232 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.54
+2016-09-13 15:02:40,395 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.545
+2016-09-13 15:02:41,566 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.55
+2016-09-13 15:02:42,868 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.555
+2016-09-13 15:02:44,035 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.56
+2016-09-13 15:02:45,209 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.565
+2016-09-13 15:02:46,381 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.57
+2016-09-13 15:02:47,683 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.575
+2016-09-13 15:02:48,861 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.58
+2016-09-13 15:02:50,037 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.585
+2016-09-13 15:02:51,210 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.59
+2016-09-13 15:02:52,381 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.595
+2016-09-13 15:02:53,555 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.6
+2016-09-13 15:02:54,723 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.605
+2016-09-13 15:02:55,903 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.61
+2016-09-13 15:02:57,083 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.615
+2016-09-13 15:02:58,261 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.62
+2016-09-13 15:02:59,437 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.625
+2016-09-13 15:03:00,602 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.63
+2016-09-13 15:03:01,773 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.635
+2016-09-13 15:03:02,949 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.64
+2016-09-13 15:03:04,237 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.645
+2016-09-13 15:03:05,412 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.65
+2016-09-13 15:03:06,718 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.655
+2016-09-13 15:03:07,972 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.66
+2016-09-13 15:03:09,299 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.665
+2016-09-13 15:03:10,475 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.67
+2016-09-13 15:03:11,653 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.675
+2016-09-13 15:03:12,824 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.68
+2016-09-13 15:03:13,991 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.685
+2016-09-13 15:03:15,168 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.69
+2016-09-13 15:03:16,340 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.695
+2016-09-13 15:03:17,522 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.7
+2016-09-13 15:03:18,701 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.705
+2016-09-13 15:03:19,879 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.71
+2016-09-13 15:03:21,059 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.715
+2016-09-13 15:03:22,232 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.72
+2016-09-13 15:03:23,485 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.725
+2016-09-13 15:03:24,653 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.73
+2016-09-13 15:03:25,829 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.735
+2016-09-13 15:03:27,008 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.74
+2016-09-13 15:03:28,265 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.745
+2016-09-13 15:03:29,443 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.75
+2016-09-13 15:03:30,614 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.755
+2016-09-13 15:03:31,790 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.76
+2016-09-13 15:03:32,976 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.765
+2016-09-13 15:03:34,167 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.77
+2016-09-13 15:03:35,345 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.775
+2016-09-13 15:03:36,523 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.78
+2016-09-13 15:03:37,716 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.785
+2016-09-13 15:03:38,959 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.79
+2016-09-13 15:03:40,133 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.795
+2016-09-13 15:03:41,303 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.8
+2016-09-13 15:03:42,486 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.805
+2016-09-13 15:03:43,670 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.81
+2016-09-13 15:03:44,846 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.815
+2016-09-13 15:03:46,023 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.82
+2016-09-13 15:03:47,199 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.825
+2016-09-13 15:03:48,525 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.83
+2016-09-13 15:03:49,766 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.835
+2016-09-13 15:03:51,014 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.84
+2016-09-13 15:03:52,193 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.845
+2016-09-13 15:03:53,378 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.85
+2016-09-13 15:03:54,563 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.855
+2016-09-13 15:03:55,740 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.86
+2016-09-13 15:03:56,919 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.865
+2016-09-13 15:03:58,096 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.87
+2016-09-13 15:03:59,355 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.875
+2016-09-13 15:04:00,523 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.88
+2016-09-13 15:04:01,700 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.885
+2016-09-13 15:04:02,869 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.89
+2016-09-13 15:04:04,042 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.895
+2016-09-13 15:04:05,217 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.9
+2016-09-13 15:04:06,377 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.905
+2016-09-13 15:04:07,545 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.91
+2016-09-13 15:04:08,718 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.915
+2016-09-13 15:04:10,064 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.92
+2016-09-13 15:04:11,407 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.925
+2016-09-13 15:04:12,745 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.93
+2016-09-13 15:04:14,090 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.935
+2016-09-13 15:04:15,264 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.94
+2016-09-13 15:04:16,600 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.945
+2016-09-13 15:04:17,817 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.95
+2016-09-13 15:04:19,005 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.955
+2016-09-13 15:04:20,343 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.96
+2016-09-13 15:04:21,535 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.965
+2016-09-13 15:04:22,700 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.97
+2016-09-13 15:04:23,867 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.975
+2016-09-13 15:04:25,025 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.98
+2016-09-13 15:04:26,238 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.985
+2016-09-13 15:04:27,570 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.99
+2016-09-13 15:04:28,894 - module_utilities.py - print_gui - 148 - INFO - STATUS	0.995
+2016-09-13 15:04:30,218 - module_utilities.py - print_gui - 148 - INFO - STATUS	1.0
+2016-09-13 15:04:30,218 - module_utilities.py - print_gui - 148 - INFO - 
+Processed 200 DCD frame(s)
+
+2016-09-13 15:04:30,219 - module_utilities.py - print_gui - 148 - INFO - 
+Data stored in directory: clustering_totest2/sascalc/neutron_D2Op_100
+
+2016-09-13 15:04:30,219 - module_utilities.py - print_gui - 148 - INFO - 
+Data stored in directory: clustering_totest2/sascalc/xray
+
+2016-09-13 15:04:37,718 - sascalc.py - epilogue - 273 - DEBUG - in epilogue
+2016-09-13 15:04:37,718 - module_utilities.py - clean_up - 157 - DEBUG - in clean_up
+2016-09-13 15:04:37,745 - module_utilities.py - print_gui - 148 - INFO - 
+============================================================ 
+
