@@ -72,6 +72,8 @@ print('looking for SANS files in: {}'.format(sans_search))
 # find the SAS files
 saxs_files = glob.glob(saxs_search)
 sans_files = glob.glob(sans_search)
+saxs_files.sort()
+sans_files.sort()
 print('found {} SAXS files'.format(len(saxs_files)))
 print('found {} SAXS files'.format(len(sans_files)))
 
@@ -376,4 +378,3 @@ for cluster_out_file in cluster_out_files:
 
 mol.close_dcd_write(dcd_out_file)
 mol.close_dcd_read(dcd_in_file[0])
-
