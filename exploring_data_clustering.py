@@ -82,9 +82,12 @@ print('found {} SAXS files'.format(len(sans_files)))
 # load in the SAXS data
 saxs_data = []
 first_data = np.loadtxt(saxs_files[0])
+q_mask = first_data[:, 0] <= 0.18
+first_data = first_data[q_mask]
 saxs_data.append(first_data[1:, 1])
 for saxs_file in saxs_files[1:]:
     x_data = np.loadtxt(saxs_file)
+    x_data = x_data[q_mask]
     assert np.allclose(x_data[0, 1], first_data[0, 1]), 'ERROR: data not normalize'
     assert np.allclose(x_data[:, 0], first_data[:, 0]), 'ERROR: data not on same Q-grid'
     saxs_data.append(x_data[1:, 1])
@@ -95,9 +98,12 @@ saxs_data = np.array(saxs_data)
 # load in the SANS data
 sans_data = []
 first_data = np.loadtxt(sans_files[0])
+q_mask = first_data[:, 0] <= 0.18
+first_data = first_data[q_mask]
 sans_data.append(first_data[1:, 1])
 for sans_file in sans_files[1:]:
     n_data = np.loadtxt(sans_file)
+    n_data = n_data[q_mask]
     assert np.allclose(n_data[0, 1], first_data[0, 1]), 'ERROR: data not normalize'
     assert np.allclose(n_data[:, 0], first_data[:, 0]), 'ERROR: data not on same Q-grid'
     sans_data.append(n_data[1:, 1])
