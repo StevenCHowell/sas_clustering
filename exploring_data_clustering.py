@@ -51,14 +51,15 @@ def mkdir_p(path):
 
 #~~~~~ Tune these parameters to adjust clustering ~~~~~#
 
-distance = 2.0   # radius in hyerdimensional space (increasing r reduces number of unique structures)
+distance = 0.5   # radius in hyerdimensional space (increasing r reduces number of unique structures)
 min_samples = 2  # minimum number of structures to form a cluster
+q_max = 0.2    # maximum q value for clustering
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 out_dir = 'output'
 mkdir_p(out_dir)
-sas_dir = 'sascalc'
+sas_dir = 'sascalc_all'
 saxs_dir = 'xray'
 sans_dir = 'neutron_D2Op_100'
 sas_ext = '*.iq'
@@ -80,9 +81,10 @@ print('found {} SAXS files'.format(len(sans_files)))
 
 # In[4]:
 # load in the SAXS data
+print('loading in saxs data')
 saxs_data = []
 first_data = np.loadtxt(saxs_files[0])
-q_mask = first_data[:, 0] <= 0.18
+q_mask = first_data[:, 0] <= q_max
 first_data = first_data[q_mask]
 saxs_data.append(first_data[1:, 1])
 for saxs_file in saxs_files[1:]:
@@ -96,9 +98,10 @@ saxs_data = np.array(saxs_data)
 
 # In[5]:
 # load in the SANS data
+print('loading in sans data')
 sans_data = []
 first_data = np.loadtxt(sans_files[0])
-q_mask = first_data[:, 0] <= 0.18
+q_mask = first_data[:, 0] <= q_max
 first_data = first_data[q_mask]
 sans_data.append(first_data[1:, 1])
 for sans_file in sans_files[1:]:
@@ -151,6 +154,7 @@ sans_data = np.array(sans_data)
 
 # In[11]:
 
+print('scaling data')
 x_scaler = RobustScaler()
 n_scaler = RobustScaler()
 
@@ -239,6 +243,7 @@ for i0 in range(40):
 # distance = 1
 # min_samples = 2
 # ##################################################
+print('performing DBSCAN clustering')
 x_db = DBSCAN(eps=distance, min_samples=min_samples).fit(scaled_saxs)
 x_core_samples_mask = np.zeros_like(x_db.labels_, dtype=bool)
 x_core_samples_mask[x_db.core_sample_indices_] = True
@@ -259,8 +264,9 @@ x_unique = set(x_labels)
 x_unique.remove(0)
 print('cluster labels: {}'.format(x_unique))
 print('unique clusters: {}'.format(len(x_unique) + list(x_labels).count(0)))
-for c in set(x_labels):
-    print('{}: {}'.format(c, list(x_labels).count(c)))
+if len(x_labels) < 200:
+    for c in set(x_labels):
+        print('{}: {}'.format(c, list(x_labels).count(c)))
 
 
 # In[61]:
@@ -271,15 +277,16 @@ unique.remove(0)
 total_clusters = len(unique) + list(n_labels).count(0)
 print('cluster labels: {}'.format(unique))
 print('unique clusters: {}'.format(total_clusters))
-for c in set(n_labels):
-    print('{}: {}'.format(c, list(n_labels).count(c)))
+if len(x_labels) < 200:
+    for c in set(n_labels):
+        print('{}: {}'.format(c, list(n_labels).count(c)))
 
 
 # In[40]:
 
 np.savetxt(op.join(out_dir, 'x_clusters.txt'), x_labels, fmt='%d')
 np.savetxt(op.join(out_dir, 'n_clusters.txt'), n_labels, fmt='%d')
-
+print('cluster info saved to {}: x_clusters.txt and n_clusters.txt'.format(out_dir))
 
 # In[41]:
 
@@ -323,10 +330,12 @@ for i0 in range(40):
 
 # In[87]:
 
+print('opening dcd file for structure extraction')
 dcd_fname = glob.glob('*.dcd')
 assert len(dcd_fname) == 1, 'ERROR: unsure which dcd file to use: {}'.format(dcd_fname)
 dcd_fname = dcd_fname[0]
 
+print('opening pdb file for atom information')
 pdb_fname = glob.glob('*.pdb')
 assert len(pdb_fname) == 1, 'ERROR: unsure which dcd file to use: {}'.format(pdb_fname)
 pdb_fname = pdb_fname[0]
@@ -348,6 +357,7 @@ labels = n_labels
 # In[92]:
 
 # create a dcd for every cluster with >1 frame
+print('opening dcd for for storing unique structures')
 dcd_fnames = []
 cluster_out_files = [] # dcds for clusters
 unique_out_fname = op.join(out_dir, '{}_uniue.dcd'.format(dcd_fname[:-4]))
@@ -355,8 +365,9 @@ dcd_out_file = mol.open_dcd_write(unique_out_fname) # dcd file for unique struct
 
 dcd_in_file = mol.open_dcd_read(dcd_fname)
 
+print('opening {} dcds for storing the clustered structres'.format(len(unique)))
 for i in xrange(len(unique)):
-    this_fname = op.join(out_dir, '{}_c{:02d}.dcd'.format(dcd_fname[:-4], i+1))
+    this_fname = op.join(out_dir, '{}_c{:05d}.dcd'.format(dcd_fname[:-4], i+1))
     dcd_fnames.append(this_fname)
     cluster_out_files.append(mol.open_dcd_write(dcd_fnames[i]))
 
@@ -364,6 +375,7 @@ visited_cluster = set()
 dcd_out_frame = 0
 cluster_out_frame = np.zeros(len(unique), dtype=int)
 
+print('populating dcd files with structures')
 for (i, label) in enumerate(labels):
     mol.read_dcd_step(dcd_in_file, i)
     if label == 0:
@@ -379,6 +391,7 @@ for (i, label) in enumerate(labels):
             dcd_out_frame += 1
             mol.write_dcd_step(dcd_out_file, 0, dcd_out_frame)
 
+print('closing dcd files')
 for cluster_out_file in cluster_out_files:
     mol.close_dcd_write(cluster_out_file)
 
