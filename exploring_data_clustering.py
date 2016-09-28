@@ -77,7 +77,7 @@ q_max = 0.2    # maximum q value for clustering
 
 out_dir = 'output'
 mkdir_p(out_dir)
-sas_dir = 'sascalc_all'
+sas_dir = 'sascalc'
 saxs_dir = 'xray'
 sans_dir = 'neutron_D2Op_100'
 sas_ext = '*.iq'
@@ -390,11 +390,13 @@ dcd_out_file = mol.open_dcd_write(unique_out_fname)
 
 dcd_in_file = mol.open_dcd_read(dcd_fname)
 
+'''
 print('opening {} dcds for the clustered structres'.format(len(unique)))
 for i in xrange(len(unique)):
     this_fname = op.join(out_dir, '{}_c{:05d}.dcd'.format(dcd_fname[:-4], i+1))
     dcd_fnames.append(this_fname)
     cluster_out_files.append(mol.open_dcd_write(dcd_fnames[i]))
+'''
 
 visited_cluster = set()
 dcd_out_frame = 0
@@ -410,8 +412,10 @@ for (i, label) in enumerate(labels):
         cluster_out_frame[label-1] += 1
         # print('adding frame to cluster {}'.format(label-1))
         # print(cluster_out_frame)
+        '''
         mol.write_dcd_step(cluster_out_files[label-1], 0,
                            cluster_out_frame[label-1])
+        '''
         if label not in visited_cluster:
             visited_cluster.add(label)
             dcd_out_frame += 1
