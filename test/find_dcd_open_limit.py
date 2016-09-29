@@ -45,4 +45,4 @@ for n_dcds in n_dcds_list:
 
     for cluster_out_file in cluster_out_files:
         mol.write_dcd_step(cluster_out_file, 0, 1)
-        mol.close_dcd_write(cluster_out_file)
+        mol.close_dcd(cluster_out_file)
