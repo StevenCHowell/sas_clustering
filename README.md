@@ -3,15 +3,15 @@
 ## Prerequisites
 The packages used in this code are [NumPy](http://www.numpy.org/), [scikit-learn](http://scikit-learn.org/stable/), [SASMOL](https://github.com/madscatt/sasmol), and [matplotlib](http://matplotlib.org/).  I recommend using a [conda environments](http://conda.pydata.org/docs/using/envs.html) to run this code in an isolated clean python environment.  Continuum provides great [documentation for managing conda environments](http://conda.pydata.org/docs/using/envs.html) which I recommend you read but the commands to create an environment for this project are
 
-    conda create --name clustering python=2.7 numpy sklearn matplotlib
+    conda create --name clustering python=2.7 numpy scikit-learn matplotlib jupyter
     source activate clustering  # activate the new conda python environment
 
 If you prefer to not create an environment, these packages can be installed into an existing python environment using either:
 
-    conda install numpy sklearn matplotlib
+    conda install numpy scikit-learn matplotlib jupyter
  or 
 
-    pip install numpy sklearn matplotlib
+    pip install numpy scikit-learn matplotlib jupyter
     
 Regardless of your python environment, SASMOL must be installed from [source code](https://github.com/madscatt/sasmol) using the following commands:
 
